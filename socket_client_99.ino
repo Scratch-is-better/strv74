@@ -78,11 +78,11 @@ int t = 5;
     
     else()analogWrite(enb, rx[1]);
   
-    digitalWrite(r1, rx[2]);
-    digitalWrite(l1, !rx[2]);
+    digitalWrite(in1, rx[2]);
+    digitalWrite(in2, !rx[2]);
 
-    digitalWrite(r2, rx[3]);
-    digitalWrite(l2, !rx[3]);
+    digitalWrite(in3, rx[3]);
+    digitalWrite(in4, !rx[3]);
 
     for (int x : rx)
       Serial.printf("%d ", x);
@@ -95,3 +95,4 @@ int t = 5;
   }
 
 }
+
